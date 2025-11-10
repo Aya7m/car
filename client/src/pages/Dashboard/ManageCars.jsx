@@ -37,9 +37,10 @@ const ManageCars = () => {
 
   const deleteCar = async (carId) => {
     try {
-
-      const confirm=window.confirm("Are you sure you want to delete this car?")
-      if(!confirm) return;
+      const confirm = window.confirm(
+        "Are you sure you want to delete this car?"
+      );
+      if (!confirm) return;
       const { data } = await axios.post("/api/owner/delete-car", { carId });
       if (data.success) {
         toast.success(data.message);
@@ -115,7 +116,7 @@ const ManageCars = () => {
 
                 <td className="flex items-center p-3">
                   <img
-                  onClick={()=>toogleCarAvaliabilty(car._id)}
+                    onClick={() => toogleCarAvaliabilty(car._id)}
                     src={
                       car.isAvaliable ? assets.eye_close_icon : assets.eye_icon
                     }
@@ -123,9 +124,8 @@ const ManageCars = () => {
                     className="cursor-pointer"
                   />
 
-
                   <img
-                  onClick={()=>deleteCar(car._id)}
+                    onClick={() => deleteCar(car._id)}
                     src={assets.delete_icon}
                     alt="icon"
                     className="cursor-pointer"
@@ -141,3 +141,4 @@ const ManageCars = () => {
 };
 
 export default ManageCars;
+

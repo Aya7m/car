@@ -14,7 +14,9 @@ import ManageBooking from "./pages/Dashboard/ManageBooking";
 import Login from "./components/Login";
 import {Toaster} from 'react-hot-toast'
 import { useAppContext } from "./context/AppContext";
-import ManageCars from "./pages/Dashboard/manageCars";
+import ManageCars from "./pages/Dashboard/ManageCars";
+
+
 
 const App = () => {
   const {showLogin}=useAppContext()
