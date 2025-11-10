@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+@theme {
+  --color-primary: #0D47A1;       /* أزرق غامق قوي يعطي إحساس بالثقة */
+  --color-primary-dark: #093170;  /* ظل أغمق للهوفر أو التركيز */
+  --color-accent: #FFB300;        /* أصفر ذهبي يعطي طاقة ولمسة فخامة */
+  --color-light: #F8FAFC;         /* خلفية فاتحة مريحة */
+  --color-borderColor: #D1D5DB;   /* رمادي فاتح ناعم */
+  --color-text: #1E293B;          /* لون النص الأساسي */
+  --color-muted: #64748B;         /* للنصوص الثانوية */
+}
