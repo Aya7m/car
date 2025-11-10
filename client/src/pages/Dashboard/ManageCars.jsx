@@ -4,7 +4,7 @@ import Title from "../../components/Dashboard/Title";
 import { useAppContext } from "../../context/AppContext";
 import toast from "react-hot-toast";
 
-const ManageCare = () => {
+const ManageCars = () => {
   const { axios, currency, isOwner } = useAppContext();
 
   const [cars, setCars] = useState([]);
@@ -140,4 +140,4 @@ const ManageCare = () => {
   );
 };
 
-export default ManageCare;
+export default ManageCars;
